@@ -4,8 +4,7 @@ import {
     Breadcrumb,
     BreadcrumbItem,
     BreadcrumbLink,
-    BreadcrumbList,
-    BreadcrumbSeparator
+    BreadcrumbList
 } from "@/components/ui/breadcrumb";
 import Link from "next/link";
 import Squares from "@/components/ui/squares";
