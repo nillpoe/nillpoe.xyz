@@ -15,32 +15,12 @@ import Image from "next/image";
 import {Separator} from "@/components/ui/separator";
 import {motion} from "framer-motion";
 import StackIcon from "tech-stack-icons";
-import React, {useEffect, useState} from "react";
-import {Skeleton} from "@/components/ui/skeleton";
-import {cn} from "@/lib/utils";
+import React from "react";
 
 const Home = () => {
-    interface LanyardResp {
-        discord_status: "online" | "dnd" | "idle" | "offline";
-    }
-
-    const [lanyardData, setLanyardData] = useState<LanyardResp>();
-    const [lanyardLoading, setLanyardLoading] = useState(true);
-
-    useEffect(() => {
-        const ID = "1102166553027432488";
-
-        fetch(`https://api.lanyard.rest/v1/users/${ID}`)
-            .then((res) => res.json())
-            .then((res) => {
-                setLanyardData(res.data);
-                setLanyardLoading(false);
-            });
-    }, []);
-
     const MobileWarningBanner = () => (
         <div
-            className="xl:hidden fixed top-0 left-0 right-0 z-50 h-[50px] w-screen flex items-center pl-2.5 pr-3 bg-neutral-50">
+            className="xl:hidden fixed top-0 left-0 right-0 z-40 h-[50px] w-screen flex items-center pl-2.5 pr-3 bg-neutral-50">
             <div className="flex gap-x-2 items-center text-destructive xl:hidden">
                 <Smartphone
                     className="w-8 h-8 p-0.5 rounded-sm hover:bg-foreground/20 transition-colors animate-pulse"/>
@@ -53,7 +33,7 @@ const Home = () => {
     );
 
     const Navbar = () => (
-        <nav className="max-xl:hidden fixed top-0 left-0 right-0 z-50 h-[45px] w-full flex justify-between items-center pl-2.5 pr-3 bg-accent">
+        <nav className="max-xl:hidden fixed top-0 left-0 right-0 z-30 h-[45px] w-full flex justify-between items-center pl-2.5 pr-3 backdrop-blur-md border-b border-neutral-500/50">
             <div className="flex items-center">
                 <Breadcrumb className="ml-2">
                     <BreadcrumbList className="gap-1">
@@ -69,8 +49,7 @@ const Home = () => {
     );
 
     const Home = () => (
-        <article id="home"
-                 className="relative h-screen w-full shadow-inner shadow-black/50 after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-full after:h-1/3 after:bg-gradient-to-t after:from-background after:to-transparent">
+        <article id="home" className="relative h-screen w-full shadow-inner shadow-black/50 after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-full after:h-1/3 after:bg-gradient-to-t after:from-background after:to-transparent">
             <Squares
                 speed={0.05}
                 squareSize={35}
@@ -126,11 +105,11 @@ const Home = () => {
                         <div id="toc" className="w-full scroll-mt-[60px]">
                             <h2 className="text-3xl font-bold mb-1 tracking-wide">챕터</h2>
                             <ul className="list-decimal pl-5">
-                                <li><Link href="#home">Home</Link></li>
-                                <li><Link href="#careers">Careers</Link></li>
-                                <li><Link href="#projects">Projects</Link></li>
-                                <li><Link href="#skills">Skills</Link></li>
-                                <li><Link href="#social">Social</Link></li>
+                                <li><Link href="#home" className="h-5 mb-1">Home</Link></li>
+                                <li><Link href="#careers" className="h-5 mb-1">Careers</Link></li>
+                                <li><Link href="#projects" className="h-5 mb-1">Projects</Link></li>
+                                <li><Link href="#skills" className="h-5 mb-1">Skills</Link></li>
+                                <li><Link href="#social" className="h-5 mb-1">Social</Link></li>
                             </ul>
                         </div>
                     </motion.div>
@@ -140,7 +119,7 @@ const Home = () => {
     );
 
     const Careers = () => (
-        <motion.article
+        <motion.section
             initial={{opacity: 0}}
             animate={{opacity: 1}}
             transition={{duration: 0.8, delay: 0.9}}
@@ -176,11 +155,11 @@ const Home = () => {
                 <Separator className="w-full flex-1 dark:bg-neutral-100/60"/>
                 <Link href="/details/verchase">자세히 보기</Link>
             </div>
-        </motion.article>
+        </motion.section>
     );
 
     const Projects = () => (
-        <motion.article
+        <motion.section
             initial={{opacity: 0}}
             animate={{opacity: 1}}
             transition={{duration: 0.8, delay: 1}}
@@ -220,7 +199,7 @@ const Home = () => {
                 <div className="flex flex-col gap-y-1">
                     <p>추가적인 소스코드는 아래 링크에 게시되어 있어요. 내용을 확인하시려면 제게 연락해주세요.</p>
                     <Link2 target="_blank" href="https://gofile.io/d/v4f65g">
-                        <div className="h-[108px] flex items-center justify-between rounded-sm border border-neutral-500/50 hover:bg-neutral-300/30 transition-colors select-none">
+                        <div className="h-[108px] flex items-center justify-between rounded-sm border border-neutral-500/50 hover:bg-neutral-300/30 transition-colors">
                             <div className="h-full flex flex-col justify-between p-3.5">
                                 <h5 className="pb-0.5 text-sm text-neutral-300 font-medium">
                                     Protected Content
@@ -243,11 +222,11 @@ const Home = () => {
                     </Link2>
                 </div>
             </div>
-        </motion.article>
+        </motion.section>
     );
 
     const Skills = () => (
-        <motion.article
+        <motion.section
             initial={{opacity: 0}}
             animate={{opacity: 1}}
             transition={{duration: 0.8, delay: 1.1}}
@@ -268,10 +247,10 @@ const Home = () => {
                         <StackIcon name="spring" className="h-14 rounded-md bg-neutral-100 p-2"/>
                         <Image alt="Maven 로고" src="https://cdn.nillpoe.xyz/images/Maven.svg"
                                width={56} height={56}
-                               className="h-14 rounded-md bg-neutral-100 p-2"/>
+                               className="h-14 rounded-md bg-neutral-100 p-2 select-none"/>
                         <Image alt="Gradle 로고" src="https://cdn.nillpoe.xyz/images/Gradle.svg"
                                width={56} height={56}
-                               className="h-14 rounded-md bg-neutral-100 p-2"/>
+                               className="h-14 rounded-md bg-neutral-100 p-2 select-none"/>
                     </div>
                 </div>
                 <div className="flex justify-between items-center">
@@ -290,12 +269,12 @@ const Home = () => {
                         <StackIcon name="mysql" className="h-14 rounded-md bg-neutral-100 p-2"/>
                         <Image alt="SQLite 로고" src="https://cdn.nillpoe.xyz/images/SQLite.svg"
                                width={56} height={56}
-                               className="h-14 rounded-md bg-neutral-100 p-2"/>
+                               className="h-14 rounded-md bg-neutral-100 p-2 select-none"/>
                         <StackIcon name="mongodb" className="h-14 rounded-md bg-neutral-100 p-2"/>
                         <StackIcon name="redis" className="h-14 rounded-md bg-neutral-100 p-2"/>
                         <Image alt="HeidiSQL 로고" src="https://cdn.nillpoe.xyz/images/HeidiSQL.png"
                                width={56} height={56}
-                               className="h-14 rounded-md bg-neutral-100 p-2"/>
+                               className="h-14 rounded-md bg-neutral-100 p-2 select-none"/>
                     </div>
                 </div>
                 <div className="flex justify-between items-center">
@@ -305,13 +284,13 @@ const Home = () => {
                         <StackIcon name="github" className="h-14 rounded-md bg-neutral-100 p-2"/>
                         <Image alt="Discord 로고" src="https://cdn.nillpoe.xyz/images/Discord.svg"
                                width={56} height={56}
-                               className="h-14 rounded-md bg-neutral-100 p-2"/>
+                               className="h-14 rounded-md bg-neutral-100 p-2 select-none"/>
                         <Image alt="Jenkins 로고" src="https://cdn.nillpoe.xyz/images/Jenkins.svg"
                                width={50} height={50}
-                               className="h-14 w-14 rounded-md bg-neutral-100 px-2.5 py-1"/>
+                               className="h-14 w-14 rounded-md bg-neutral-100 px-2.5 py-1 select-none"/>
                         <Image alt="TeamCity 로고" src="https://cdn.nillpoe.xyz/images/TeamCity.svg"
                                width={56} height={56}
-                               className="h-14 rounded-md bg-neutral-100 p-2"/>
+                               className="h-14 rounded-md bg-neutral-100 p-2 select-none"/>
                     </div>
                 </div>
                 <div className="flex justify-between items-center">
@@ -319,25 +298,25 @@ const Home = () => {
                     <div className="flex items-center gap-x-2">
                         <Image alt="IntelliJ 로고" src="https://cdn.nillpoe.xyz/images/IntelliJ.svg"
                                width={56} height={56}
-                               className="h-14 rounded-md bg-neutral-100 p-2"/>
+                               className="h-14 rounded-md bg-neutral-100 p-2 select-none"/>
                         <Image alt="WebStorm 로고" src="https://cdn.nillpoe.xyz/images/WebStorm.svg"
                                width={56} height={56}
-                               className="h-14 rounded-md bg-neutral-100 p-2"/>
+                               className="h-14 rounded-md bg-neutral-100 p-2 select-none"/>
                         <Image alt="VSCode 로고" src="https://cdn.nillpoe.xyz/images/VSCode.svg"
                                width={56} height={56}
-                               className="h-14 rounded-md bg-neutral-100 p-2"/>
+                               className="h-14 rounded-md bg-neutral-100 p-2 select-none"/>
                         <Image alt="Parsec 로고" src="https://cdn.nillpoe.xyz/images/Parsec.svg"
                                width={56} height={56}
-                               className="h-14 rounded-md bg-neutral-100 p-2"/>
+                               className="h-14 rounded-md bg-neutral-100 p-2 select-none"/>
                         <StackIcon name="figma" className="h-14 rounded-md bg-neutral-100 p-2"/>
                     </div>
                 </div>
             </div>
-        </motion.article>
+        </motion.section>
     );
 
-    const Contact = () => (
-        <motion.article
+    const Social = () => (
+        <motion.section
             initial={{opacity: 0}}
             animate={{opacity: 1}}
             transition={{duration: 0.8, delay: 1.2}}
@@ -351,20 +330,7 @@ const Home = () => {
             </h2>
             <div className="w-full flex justify-between">
                 <div>
-                    <p className="flex items-center gap-x-2">
-                        <span>디스코드</span>
-                        { !lanyardLoading && lanyardData ? (
-                            <span className="flex items-center gap-x-1">
-                                <span className={cn("w-3.5 h-3.5 rounded-full",
-                                    lanyardData.discord_status == "online" && "bg-green-500",
-                                    lanyardData.discord_status == "dnd" && "bg-red-500",
-                                    lanyardData.discord_status == "idle" && "bg-yellow-500",
-                                    lanyardData.discord_status == "offline" && "bg-gray-500")}/>
-                            </span>
-                        ) : (
-                            <Skeleton className="w-3.5 h-3.5 rounded-full"/>
-                        )}
-                    </p>
+                    <p>디스코드</p>
                     <Link target="_blank" href="https://discord.com/users/1102166553027432488">@nillpoe</Link>
                 </div>
                 <div>
@@ -384,7 +350,7 @@ const Home = () => {
                     <Link target="_blank" href="https://beta.nillpoe.xyz">beta.nillpoe.xyz</Link>
                 </div>
             </div>
-        </motion.article>
+        </motion.section>
     );
 
     const Footer = () => (
@@ -412,7 +378,7 @@ const Home = () => {
             <Separator className="my-7"/>
             <Skills/>
             <Separator className="my-7"/>
-            <Contact/>
+            <Social/>
             <Separator className="my-7"/>
             <Footer/>
         </main>

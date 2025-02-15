@@ -106,7 +106,3 @@ body {
 ::selection {
     background: rgba(45, 170, 219, .3);
 }
-
-image {
-    user-select: none;
-}

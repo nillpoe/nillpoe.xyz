@@ -2,6 +2,8 @@ import type {Metadata} from "next";
 import React from "react";
 import NextTopLoader from "nextjs-toploader";
 import {ThemeProvider} from "@/components/theme/theme-provider";
+import { Analytics } from "@vercel/analytics/react"
+import { SpeedInsights } from "@vercel/speed-insights/next"
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -21,11 +23,13 @@ export default function RootLayout({
 }>) {
     return (
         <html lang="ko">
-        <body className="scroll-smooth antialiased">
+        <body className="antialiased">
             <ThemeProvider>
             <NextTopLoader color="#235ee0" showSpinner={false}/>
             <div className="bg-background min-h-screen flex flex-col">
                 {children}
+                <Analytics/>
+                <SpeedInsights/>
             </div>
             </ThemeProvider>
         </body>

@@ -1,3 +1,5 @@
+"use client";
+
 import {
     Breadcrumb,
     BreadcrumbItem,
@@ -11,7 +13,7 @@ import Image from "next/image";
 
 const Starly = () => {
     const Navbar = () => (
-        <nav className="max-xl:hidden fixed top-0 left-0 right-0 z-50 h-[45px] w-full flex justify-between items-center pl-2.5 pr-3 bg-accent">
+        <nav className="max-xl:hidden fixed top-0 left-0 right-0 z-50 h-[45px] w-full flex justify-between items-center pl-2.5 pr-3 backdrop-blur-md border-b border-neutral-500/50">
             <div className="flex items-center">
                 <Breadcrumb className="ml-2">
                     <BreadcrumbList className="gap-1">
