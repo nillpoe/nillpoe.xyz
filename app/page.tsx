@@ -15,9 +15,29 @@ import Image from "next/image";
 import {Separator} from "@/components/ui/separator";
 import {motion} from "framer-motion";
 import StackIcon from "tech-stack-icons";
-import React from "react";
+import React, {useEffect, useState} from "react";
+import {Skeleton} from "@/components/ui/skeleton";
+import {cn} from "@/lib/utils";
 
 const Home = () => {
+    interface LanyardResp {
+        discord_status: "online" | "dnd" | "idle" | "offline";
+    }
+
+    const [lanyardData, setLanyardData] = useState<LanyardResp>();
+    const [lanyardLoading, setLanyardLoading] = useState(true);
+
+    useEffect(() => {
+        const ID = "1102166553027432488";
+
+        fetch(`https://api.lanyard.rest/v1/users/${ID}`)
+            .then((res) => res.json())
+            .then((res) => {
+                setLanyardData(res.data);
+                setLanyardLoading(false);
+            });
+    }, []);
+
     const MobileWarningBanner = () => (
         <div
             className="xl:hidden fixed top-0 left-0 right-0 z-50 h-[50px] w-screen flex items-center pl-2.5 pr-3 bg-neutral-50">
@@ -331,7 +351,20 @@ const Home = () => {
             </h2>
             <div className="w-full flex justify-between">
                 <div>
-                    <p>디스코드</p>
+                    <p className="flex items-center gap-x-2">
+                        <span>디스코드</span>
+                        { !lanyardLoading && lanyardData ? (
+                            <span className="flex items-center gap-x-1">
+                                <span className={cn("w-3.5 h-3.5 rounded-full",
+                                    lanyardData.discord_status == "online" && "bg-green-500",
+                                    lanyardData.discord_status == "dnd" && "bg-red-500",
+                                    lanyardData.discord_status == "idle" && "bg-yellow-500",
+                                    lanyardData.discord_status == "offline" && "bg-gray-500")}/>
+                            </span>
+                        ) : (
+                            <Skeleton className="w-3.5 h-3.5 rounded-full"/>
+                        )}
+                    </p>
                     <Link target="_blank" href="https://discord.com/users/1102166553027432488">@nillpoe</Link>
                 </div>
                 <div>
