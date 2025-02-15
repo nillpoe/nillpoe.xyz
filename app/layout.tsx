@@ -3,7 +3,6 @@ import React from "react";
 import NextTopLoader from "nextjs-toploader";
 import {ThemeProvider} from "@/components/theme/theme-provider";
 import "./globals.css";
-import {TooltipProvider} from "@/components/ui/tooltip";
 
 export const metadata: Metadata = {
     title: "풀스택 개발자, 호예준 포트폴리오",
@@ -17,14 +16,12 @@ export default function RootLayout({
 }>) {
     return (
         <html lang="ko">
-        <body className="antialiased">
+        <body className="scroll-smooth antialiased">
             <ThemeProvider>
-            <TooltipProvider>
-                <NextTopLoader color="#235ee0" showSpinner={false}/>
-                <div className="bg-background min-h-screen flex flex-col">
-                    {children}
-                </div>
-            </TooltipProvider>
+            <NextTopLoader color="#235ee0" showSpinner={false}/>
+            <div className="bg-background min-h-screen flex flex-col">
+                {children}
+            </div>
             </ThemeProvider>
         </body>
         </html>
