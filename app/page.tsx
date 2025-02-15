@@ -306,7 +306,7 @@ const Home = () => {
                         <Image alt="VSCode 로고" src="https://cdn.nillpoe.xyz/images/VSCode.svg"
                                width={56} height={56}
                                className="h-14 rounded-md bg-neutral-100 p-2"/>
-                        <Image alt="Parsec 로고" src="https://cdn.nillpoe.xyz/images/Parsec.svg?"
+                        <Image alt="Parsec 로고" src="https://cdn.nillpoe.xyz/images/Parsec.svg"
                                width={56} height={56}
                                className="h-14 rounded-md bg-neutral-100 p-2"/>
                         <StackIcon name="figma" className="h-14 rounded-md bg-neutral-100 p-2"/>

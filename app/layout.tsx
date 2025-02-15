@@ -6,7 +6,12 @@ import "./globals.css";
 
 export const metadata: Metadata = {
     title: "풀스택 개발자, 호예준 포트폴리오",
-    description: "풀스택 개발자, 호예준 (닐포) 포트폴리오. Next.js, Java, Kotlin를 주로 사용합니다."
+    description: "풀스택 개발자, 호예준 (닐포) 포트폴리오.\nNext.js, Java, Kotlin를 주로 사용합니다.",
+    openGraph: {
+        images: [
+            {url: "https://cdn.nillpoe.xyz/images/pfp.png"}
+        ]
+    }
 };
 
 export default function RootLayout({
