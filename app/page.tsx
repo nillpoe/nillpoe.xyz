@@ -6,32 +6,18 @@ import {
     BreadcrumbLink,
     BreadcrumbList
 } from "@/components/ui/breadcrumb";
+import Link from "@/components/ui/link";
 import Link2 from "next/link";
 import Squares from "@/components/ui/squares";
 import RotatingText from "@/components/ui/rotating-text";
-import {ArrowUpRight, Smartphone} from "lucide-react";
+import {Smartphone} from "lucide-react";
 import Image from "next/image";
 import {Separator} from "@/components/ui/separator";
 import {motion} from "framer-motion";
 import StackIcon from "tech-stack-icons";
-import {cn} from "@/lib/utils";
 import React from "react";
 
 const Home = () => {
-    const Link = ({href, target, children, className}: {
-        href: string,
-        target?: string,
-        children?: React.ReactNode | undefined,
-        className?: string
-    }) => (
-        <Link2 href={href} target={target}
-               className={cn("flex w-fit text-blue-400/90 hover:text-blue-400", className)}>
-            {children}
-            <ArrowUpRight className="ml-0.5 w-3.5 h-3.5"/>
-        </Link2>
-    );
-
-
     const MobileWarningBanner = () => (
         <div
             className="xl:hidden fixed top-0 left-0 right-0 z-50 h-[50px] w-screen flex items-center pl-2.5 pr-3 bg-neutral-50">
@@ -47,14 +33,13 @@ const Home = () => {
     );
 
     const Navbar = () => (
-        <nav
-            className="max-xl:hidden fixed top-0 left-0 right-0 z-50 h-[45px] w-full flex justify-between items-center pl-2.5 pr-3 bg-accent">
+        <nav className="max-xl:hidden fixed top-0 left-0 right-0 z-50 h-[45px] w-full flex justify-between items-center pl-2.5 pr-3 bg-accent">
             <div className="flex items-center">
                 <Breadcrumb className="ml-2">
-                    <BreadcrumbList className="sm:gap-1">
+                    <BreadcrumbList className="gap-1">
                         <BreadcrumbItem>
                             <BreadcrumbLink className="text-white" asChild>
-                                <Link href="/">💫 풀스택 개발자, 호예준 포트폴리오</Link>
+                                <Link2 href="/">💫 풀스택 개발자, 호예준 포트폴리오</Link2>
                             </BreadcrumbLink>
                         </BreadcrumbItem>
                     </BreadcrumbList>
