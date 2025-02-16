@@ -18,7 +18,6 @@ const Page = () => {
             <h1 className="max-xl:text-4xl text-5xl font-semibold my-6">💽 스탈리 아카이브</h1>
             <div className="flex max-xl:flex-col justify-between">
                 <div>
-                    <p className="text-lg font-semibold">&quot;스탈리를 기억합니다.&quot;</p>
                     <p>
                         <CountUp
                             from={500}

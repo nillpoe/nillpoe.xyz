@@ -36,8 +36,7 @@ const Page = () => {
                     </p>
                     <div className="mt-2.5 flex gap-x-2">
                         <Link target="_blank" href="https://github.com/StarlyTeam">Github</Link>
-                        <span className="text-neutral-100/85"> &ndash; </span>
-                        <Link href="/starly/archive">스탈리 아카이브</Link>
+                        <Link href="/starly/archive">아카이브</Link>
                     </div>
                     <Separator className="my-4"/>
                     <p className="font-semibold">문의는 아래중 하나로 부탁드립니다.</p>
