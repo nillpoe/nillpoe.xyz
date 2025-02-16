@@ -17,9 +17,7 @@ const StarlyNavbar = () => {
             icon: "https://cdn.nillpoe.xyz/images/Starly2_2.png",
             iconAlt: "스탈리 로고",
             text: "스탈리",
-            url: "/starly",
-            className: "max-xl:hidden",
-            separatorClassName: "max-xl:hidden"
+            url: "/starly"
         }
     ];
 

@@ -1,11 +1,5 @@
 "use client";
 
-import {
-    Breadcrumb,
-    BreadcrumbItem,
-    BreadcrumbLink,
-    BreadcrumbList
-} from "@/components/ui/breadcrumb";
 import Link from "@/components/ui/link";
 import Link2 from "next/link";
 import Squares from "@/components/ui/squares";
@@ -16,6 +10,7 @@ import {Separator} from "@/components/ui/separator";
 import {motion} from "framer-motion";
 import StackIcon from "tech-stack-icons";
 import React from "react";
+import Navbar from "@/components/breadcrumb-navbar";
 
 const Page = () => {
     const MobileWarningBanner = () => (
@@ -30,22 +25,6 @@ const Page = () => {
                 </p>
             </div>
         </div>
-    );
-
-    const Navbar = () => (
-        <nav className="max-xl:hidden fixed top-0 left-0 right-0 z-30 h-[45px] w-full flex justify-between items-center pl-2.5 pr-3 backdrop-blur-md border-b border-neutral-500/50">
-            <div className="flex items-center">
-                <Breadcrumb className="ml-2">
-                    <BreadcrumbList className="gap-1">
-                        <BreadcrumbItem>
-                            <BreadcrumbLink className="text-white" asChild>
-                                <Link2 href="/">💫 풀스택 개발자, 호예준 포트폴리오</Link2>
-                            </BreadcrumbLink>
-                        </BreadcrumbItem>
-                    </BreadcrumbList>
-                </Breadcrumb>
-            </div>
-        </nav>
     );
 
     const Home = () => (
@@ -369,7 +348,13 @@ const Page = () => {
     return (
         <main className="h-full flex flex-col justify-center items-center">
             <MobileWarningBanner/>
-            <Navbar/>
+            <Navbar items={[
+                {
+                    text: "💫 풀스택 개발자, 호예준 포트폴리오",
+                    url: "/"
+                }
+            ]}/>
+
             <Home/>
             <Careers/>
             <Separator className="my-7"/>

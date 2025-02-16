@@ -31,8 +31,8 @@ const Navbar = ({items}: NavbarProps) => {
                 <Breadcrumb className="ml-2">
                     <BreadcrumbList className="gap-1">
                         {items.map((item, index) => (
-                            <>
-                                <BreadcrumbItem2 className={item.className} key={`item-${index}`}>
+                            <div className="flex flex-wrap items-center gap-1.5 break-words text-sm text-neutral-500 sm:gap-2.5 dark:text-neutral-400" key={`breadcrumb-${index}-span`}>
+                                <BreadcrumbItem2 className={item.className} key={`breadcrumb-${index}-item`}>
                                     <BreadcrumbLink className="text-white" asChild>
                                         <Link2 href={item.url} className="flex items-center gap-1">
                                             {item.icon && (
@@ -45,11 +45,11 @@ const Navbar = ({items}: NavbarProps) => {
                                     </BreadcrumbLink>
                                 </BreadcrumbItem2>
                                 {index < items.length - 1 && (
-                                    <BreadcrumbSeparator className={item.separatorClassName} key={`separator-${index}`}>
+                                    <BreadcrumbSeparator className={item.separatorClassName} key={`breadcrumb-${index}-separator`}>
                                         /
                                     </BreadcrumbSeparator>
                                 )}
-                            </>
+                            </div>
                         ))}
                     </BreadcrumbList>
                 </Breadcrumb>
