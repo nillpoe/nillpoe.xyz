@@ -109,7 +109,6 @@ const Page = () => {
                     <CircularText
                         text="STARLY*ARCHIVE*"
                         spinDuration={5}
-                        className="w-[150px] h-[150px]"
                     />
                 </div>
             </div>
@@ -144,7 +143,7 @@ const Page = () => {
                 </div>
             </div>
             <div>
-                <h3 className="text-2xl font-bold">일반</h3>
+                <h3 className="text-2xl font-bold">유료 리소스</h3>
                 <div className="w-full mt-2 grid grid-cols-1 gap-4 text-neutral-100/85 sm:grid-cols-3">
                     <div>
                         <p className="font-semibold">AstalShop 3.4.2 <span className="text-xs text-neutral-100/60">1.18-1.21.4</span></p>
@@ -157,11 +156,6 @@ const Page = () => {
                         <Link target="_blank" href="https://cdn.nillpoe.xyz/files/ST-CustomMenu-1.2.jar">Download</Link>
                     </div>
                     <div>
-                        <p className="font-semibold">ST-ItemEditor 1.2.7 <span className="text-xs text-neutral-100/60">1.12-1.20.1</span></p>
-                        <Link target="_blank" href="https://github.com/StarlyTeam/ST-ItemEditor">Source Code</Link>
-                        <Link target="_blank" href="https://cdn.nillpoe.xyz/files/ST-ItemEditor-1.2.7.jar">Download</Link>
-                    </div>
-                    <div>
                         <p className="font-semibold">ST-SkinBook 1.0.4 <span className="text-xs text-neutral-100/60">1.12-1.20.1</span></p>
                         <Link target="_blank" href="https://github.com/StarlyTeam/ST-SkinBook">Source Code</Link>
                         <Link target="_blank" href="https://cdn.nillpoe.xyz/files/ST-SkinBook-1.0.4.jar">Download</Link>
@@ -172,16 +166,6 @@ const Page = () => {
                         <Link target="_blank" href="https://cdn.nillpoe.xyz/files/ST-QuickMenu-1.0.5.jar">Download</Link>
                     </div>
                     <div>
-                        <p className="font-semibold">ST-DefaultKit 1.3.5 <span className="text-xs text-neutral-100/60">1.12-1.20.1</span></p>
-                        <Link target="_blank" href="https://github.com/StarlyTeam/ST-DefaultKit">Source Code</Link>
-                        <Link target="_blank" href="https://cdn.nillpoe.xyz/files/ST-DefaultKit-1.3.5.jar">Download</Link>
-                    </div>
-                    <div>
-                        <p className="font-semibold">ST-AlphaChest 1.0.5 <span className="text-xs text-neutral-100/60">1.12-1.20.1</span></p>
-                        <Link target="_blank" href="https://github.com/StarlyTeam/ST-AlphaChest">Source Code</Link>
-                        <Link target="_blank" href="https://cdn.nillpoe.xyz/files/ST-AlphaChest-1.0.5.jar">Download</Link>
-                    </div>
-                    <div>
                         <p className="font-semibold">ST-ShopPlus 1.2.5 <span className="text-xs text-neutral-100/60">1.12-1.20.1</span></p>
                         <Link target="_blank" href="https://github.com/StarlyTeam/ST-ShopPlus">Source Code</Link>
                         <Link target="_blank" href="https://cdn.nillpoe.xyz/files/ST-ShopPlus-1.2.5.jar">Download</Link>
@@ -190,6 +174,26 @@ const Page = () => {
                         <p className="font-semibold">ST-CashShop 1.0.7 <span className="text-xs text-neutral-100/60">1.12-1.20.1</span></p>
                         <Link target="_blank" href="https://github.com/StarlyTeam/ST-CashShop">Source Code</Link>
                         <Link target="_blank" href="https://cdn.nillpoe.xyz/files/ST-CashShop-1.0.7.jar">Download</Link>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <h3 className="text-2xl font-bold">무료 리소스</h3>
+                <div className="w-full mt-2 grid grid-cols-1 gap-4 text-neutral-100/85 sm:grid-cols-3">
+                    <div>
+                        <p className="font-semibold">ST-ItemEditor 1.2.7 <span className="text-xs text-neutral-100/60">1.12-1.20.1</span></p>
+                        <Link target="_blank" href="https://github.com/StarlyTeam/ST-ItemEditor">Source Code</Link>
+                        <Link target="_blank" href="https://cdn.nillpoe.xyz/files/ST-ItemEditor-1.2.7.jar">Download</Link>
+                    </div>
+                    <div>
+                        <p className="font-semibold">ST-DefaultKit 1.3.5 <span className="text-xs text-neutral-100/60">1.12-1.20.1</span></p>
+                        <Link target="_blank" href="https://github.com/StarlyTeam/ST-DefaultKit">Source Code</Link>
+                        <Link target="_blank" href="https://cdn.nillpoe.xyz/files/ST-DefaultKit-1.3.5.jar">Download</Link>
+                    </div>
+                    <div>
+                        <p className="font-semibold">ST-AlphaChest 1.0.5 <span className="text-xs text-neutral-100/60">1.12-1.20.1</span></p>
+                        <Link target="_blank" href="https://github.com/StarlyTeam/ST-AlphaChest">Source Code</Link>
+                        <Link target="_blank" href="https://cdn.nillpoe.xyz/files/ST-AlphaChest-1.0.5.jar">Download</Link>
                     </div>
                     <div>
                         <p className="font-semibold">ST-GiftBox 1.2 <span className="text-xs text-neutral-100/60">1.12-1.20.1</span></p>
@@ -206,6 +210,21 @@ const Page = () => {
                         <Link target="_blank" href="https://github.com/StarlyTeam/ST-ItemDB">Source Code</Link>
                         <Link target="_blank" href="https://cdn.nillpoe.xyz/files/ST-ItemDB-1.0.1.jar">Download</Link>
                     </div>
+                    <div>
+                        <p className="font-semibold">ST-ReverieToken 1.0.1 <span className="text-xs text-neutral-100/60">1.12-1.20.1</span></p>
+                        <Link target="_blank" href="https://github.com/StarlyTeam/ST-ReverieToken">Source Code</Link>
+                        <Link target="_blank" href="https://cdn.nillpoe.xyz/files/ST-ReverieToken-1.0.1.jar">Download</Link>
+                    </div>
+                    <div>
+                        <p className="font-semibold">ST-Shop 1.0.4 <span className="text-xs text-neutral-100/60">1.12-1.20.1</span></p>
+                        <Link target="_blank" href="https://github.com/StarlyTeam/ST-Shop2">Source Code</Link>
+                        <Link target="_blank" href="https://cdn.nillpoe.xyz/files/ST-Shop-1.0.4.jar">Download</Link>
+                    </div>
+                    <div>
+                        <p className="font-semibold">ST-Warn 1.0.4 <span className="text-xs text-neutral-100/60">1.12-1.20.1</span></p>
+                        <Link target="_blank" href="https://github.com/StarlyTeam/ST-Warn">Source Code</Link>
+                        <Link target="_blank" href="https://cdn.nillpoe.xyz/files/ST-Warn-1.0.4.jar">Download</Link>
+                    </div>
                 </div>
             </div>
         </motion.article>
@@ -219,7 +238,7 @@ const Page = () => {
             className="p-4 h-full flex flex-col justify-end"
         >
             <div className="w-full flex items-center justify-between">
-                <p className="text-neutral-400 font-bold">스탈리 · 호예준 ⓒ 2025, 모든 권리 보유.</p>
+                <p className="text-neutral-400 font-bold">스탈리 ⓒ 2025, 모든 권리 보유.</p>
                 <p className="text-neutral-400 font-normal">STARLY.KR</p>
             </div>
         </motion.footer>

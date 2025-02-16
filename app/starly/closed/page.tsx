@@ -103,7 +103,6 @@ const Page = () => {
                     <CircularText
                         text="STARLY*CLOSED*"
                         spinDuration={5}
-                        className="w-[150px] h-[150px]"
                     />
                 </div>
             </div>
