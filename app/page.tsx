@@ -341,7 +341,6 @@ const Page = () => {
                 <p className="text-neutral-400 font-bold">호예준 ⓒ {new Date().getFullYear()}, 모든 권리 보유.</p>
                 <p className="text-neutral-400 font-normal">{new Date().toLocaleDateString("ko-KR")}</p>
             </div>
-            <p className="w-full text-neutral-100 font-bold">본 홈페이지에 게시된 전화번호, 이메일 주소가 자동 수집되는 것을 거부합니다.</p>
         </motion.footer>
     );
 
