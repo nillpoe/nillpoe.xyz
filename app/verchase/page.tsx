@@ -56,8 +56,8 @@ const Page = () => {
 
     const UnderConstruction = () => (
         <div className="min-h-screen flex flex-col justify-center items-center">
-            <h1 className="text-4xl font-bold">🚧 Under Construction 🚧</h1>
-            <p className="text-lg">이 페이지는 현재 작업 중입니다. 조금만 기다려주세요!</p>
+            <h1 className="text-4xl font-bold">작업中</h1>
+            <p className="text-lg">이 페이지는 현재 작업 중입니다.</p>
         </div>
     );
 

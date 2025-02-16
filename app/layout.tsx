@@ -5,6 +5,7 @@ import {ThemeProvider} from "@/components/theme/theme-provider";
 import { Analytics } from "@vercel/analytics/react"
 import { SpeedInsights } from "@vercel/speed-insights/next"
 import "./styles/globals.css";
+import Script from "next/script";
 
 export const metadata: Metadata = {
     title: "풀스택 개발자, 호예준 포트폴리오",
@@ -24,6 +25,9 @@ export default function RootLayout({
 }>) {
     return (
         <html lang="ko">
+        <head>
+            <Script async src="https://tally.so/widgets/embed.js"/>
+        </head>
         <body className="antialiased">
             <ThemeProvider>
             <NextTopLoader color="#235ee0" showSpinner={false}/>

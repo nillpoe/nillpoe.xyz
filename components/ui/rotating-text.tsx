@@ -7,10 +7,7 @@ import React, {
     useState
 } from "react";
 import {motion, AnimatePresence, Transition} from "framer-motion";
-
-function cn(...classes: (string | undefined | null | boolean)[]): string {
-    return classes.filter(Boolean).join(" ");
-}
+import {cn} from "@/lib/utils";
 
 export interface RotatingTextRef {
     next: () => void;
