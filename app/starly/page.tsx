@@ -10,8 +10,9 @@ import {
 import Link2 from "next/link";
 import React from "react";
 import Image from "next/image";
+import Link from "@/components/ui/link";
 
-const Starly = () => {
+const Page = () => {
     const Navbar = () => (
         <nav className="max-xl:hidden fixed top-0 left-0 right-0 z-50 h-[45px] w-full flex justify-between items-center pl-2.5 pr-3 backdrop-blur-md border-b border-neutral-500/50">
             <div className="flex items-center">
@@ -43,6 +44,11 @@ const Starly = () => {
         <div className="min-h-screen flex flex-col justify-center items-center">
             <h1 className="text-4xl font-bold">🚧 Under Construction 🚧</h1>
             <p className="text-lg">이 페이지는 현재 작업 중입니다. 조금만 기다려주세요!</p>
+            <div className="flex gap-x-1.5 mt-4">
+                <Link href="/starly/archive">스탈리 아카이브</Link>
+                <span>|</span>
+                <Link href="/starly/closed">스탈리 서비스 종료</Link>
+            </div>
         </div>
     );
 
@@ -54,4 +60,4 @@ const Starly = () => {
     )
 };
 
-export default Starly;
+export default Page;

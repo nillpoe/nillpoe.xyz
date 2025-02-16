@@ -10,7 +10,7 @@ const Link = ({href, target, children, className}: {
     className?: string
 }) => (
     <Link2 href={href} target={target}
-           className={cn("flex w-fit text-blue-400/90 hover:text-blue-400", className)}>
+           className={cn("flex items-center w-fit text-blue-400/90 hover:text-blue-400", className)}>
         {children}
         <ArrowUpRight className="ml-0.5 w-3.5 h-3.5"/>
     </Link2>

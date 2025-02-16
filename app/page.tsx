@@ -17,7 +17,7 @@ import {motion} from "framer-motion";
 import StackIcon from "tech-stack-icons";
 import React from "react";
 
-const Home = () => {
+const Page = () => {
     const MobileWarningBanner = () => (
         <div
             className="xl:hidden fixed top-0 left-0 right-0 z-40 h-[50px] w-screen flex items-center pl-2.5 pr-3 bg-neutral-50">
@@ -346,7 +346,7 @@ const Home = () => {
                 </div>
                 <div>
                     <p>웹사이트</p>
-                    <Link target="_blank" href="https://beta.nillpoe.xyz">beta.nillpoe.xyz</Link>
+                    <Link target="_blank" href={`https://${process.env.NEXT_PUBLIC_DOMAIN}`}>{process.env.NEXT_PUBLIC_DOMAIN}</Link>
                 </div>
             </div>
         </motion.section>
@@ -384,4 +384,4 @@ const Home = () => {
     );
 };
 
-export default Home;
+export default Page;

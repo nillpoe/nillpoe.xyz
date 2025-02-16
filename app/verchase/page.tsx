@@ -11,7 +11,7 @@ import Link2 from "next/link";
 import Image from "next/image";
 import React from "react";
 
-const Verchase = () => {
+const Page = () => {
     const Navbar = () => (
         <nav className="max-xl:hidden fixed top-0 left-0 right-0 z-50 h-[45px] w-full flex justify-between items-center pl-2.5 pr-3 backdrop-blur-md border-b border-neutral-500/50">
             <div className="flex items-center">
@@ -54,4 +54,4 @@ const Verchase = () => {
     )
 };
 
-export default Verchase;
+export default Page;
