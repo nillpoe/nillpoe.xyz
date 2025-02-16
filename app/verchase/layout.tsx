@@ -3,12 +3,7 @@ import React from "react";
 import VerchaseNavbar from "@/components/verchase-navbar";
 
 export const metadata: Metadata = {
-    title: "벌체이스 | 풀스택 개발자, 호예준",
-    openGraph: {
-        images: [
-            {url: "https://cdn.nillpoe.xyz/images/Starly2_1.png"}
-        ]
-    }
+    title: "벌체이스 | 풀스택 개발자, 호예준"
 };
 
 export default function SubLayout({

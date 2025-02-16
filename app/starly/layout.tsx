@@ -3,12 +3,7 @@ import React from "react";
 import StarlyNavbar from "@/components/starly-navbar";
 
 export const metadata: Metadata = {
-    title: "스탈리 | 풀스택 개발자, 호예준",
-    openGraph: {
-        images: [
-            {url: "https://cdn.nillpoe.xyz/images/Starly2_1.png"}
-        ]
-    }
+    title: "스탈리 | 풀스택 개발자, 호예준"
 };
 
 export default function SubLayout({
