@@ -359,8 +359,8 @@ const Page = () => {
             transition={{duration: 0.8, delay: 1.3}}
             className="h-full w-[708px] flex flex-col gap-y-3 items-center pb-[10vh]">
             <div className="w-full flex justify-between items-center scroll-mt-[60px]">
-                <p className="text-neutral-400 font-bold">호예준 ⓒ 2025, 모든 권리 보유.</p>
-                <p className="text-neutral-400 font-normal">최근 수정: 2025-02-16</p>
+                <p className="text-neutral-400 font-bold">호예준 ⓒ {new Date().getFullYear()}, 모든 권리 보유.</p>
+                <p className="text-neutral-400 font-normal">{new Date().toLocaleDateString("ko-KR")}</p>
             </div>
             <p className="w-full text-neutral-100 font-bold">본 홈페이지에 게시된 전화번호, 이메일 주소가 자동 수집되는 것을 거부합니다.</p>
         </motion.footer>

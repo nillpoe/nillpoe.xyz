@@ -238,7 +238,7 @@ const Page = () => {
             className="p-4 h-full flex flex-col justify-end"
         >
             <div className="w-full flex items-center justify-between">
-                <p className="text-neutral-400 font-bold">스탈리 ⓒ 2025, 모든 권리 보유.</p>
+                <p className="text-neutral-400 font-bold">스탈리 ⓒ {new Date().getFullYear()}, 모든 권리 보유.</p>
                 <p className="text-neutral-400 font-normal">STARLY.KR</p>
             </div>
         </motion.footer>
