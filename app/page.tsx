@@ -137,7 +137,6 @@ const Home = () => {
                     <span className="font-light text-sm">(2023)</span>
                 </p>
                 <Separator className="w-full flex-1 dark:bg-neutral-100/60"/>
-                {/*<Link href="/details/lucynetwork">자세히 보기</Link>*/}
             </div>
             <div className="w-full flex items-center gap-x-3">
                 <p className="text-lg font-normal min-w-fit">
@@ -145,7 +144,7 @@ const Home = () => {
                     <span className="font-light text-sm">(2022/10 ~ 2024/10)</span>
                 </p>
                 <Separator className="w-full flex-1 dark:bg-neutral-100/60"/>
-                <Link href="/details/starly">자세히 보기</Link>
+                <Link href="/starly">자세히 보기</Link>
             </div>
             <div className="w-full flex items-center gap-x-3">
                 <p className="text-lg font-normal min-w-fit">
@@ -153,7 +152,7 @@ const Home = () => {
                     <span className="font-light text-sm">(2024/10 ~ 2024/11)</span>
                 </p>
                 <Separator className="w-full flex-1 dark:bg-neutral-100/60"/>
-                <Link href="/details/verchase">자세히 보기</Link>
+                <Link href="/verchase">자세히 보기</Link>
             </div>
         </motion.section>
     );

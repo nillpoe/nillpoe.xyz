@@ -16,34 +16,23 @@ import CountUp from "@/components/ui/count-up";
 import Link from "@/components/ui/link";
 import {Separator} from "@/components/ui/separator";
 import {Accordion, AccordionContent, AccordionItem, AccordionTrigger} from "@/components/ui/accordion";
-import Iridescence from "@/components/ui/iridescence";
 
 const StarlyKR = () => {
-    const Background = () => (
-        <div className="fixed left-0 right-0 top-0 bottom-0 opacity-25">
-            <Iridescence
-                color={[1, 1, 1]}
-                mouseReact={false}
-                speed={0.5}
-            />
-        </div>
-    );
-
     const Navbar = () => (
         <nav
-            className="max-xl:hidden fixed top-0 left-0 right-0 z-30 h-[45px] w-full flex justify-between items-center pl-2.5 pr-3 backdrop-blur-3xl border-b border-neutral-500/50">
+            className="fixed top-0 left-0 right-0 z-30 h-[45px] w-full flex justify-between items-center pl-2.5 pr-3 backdrop-blur-md border-b border-neutral-500/50">
             <div className="flex items-center">
                 <Breadcrumb className="ml-2">
                     <BreadcrumbList className="gap-1">
-                        <BreadcrumbItem>
+                        <BreadcrumbItem className="max-xl:hidden">
                             <BreadcrumbLink className="text-white" asChild>
                                 <Link2 href="/">💫 풀스택 개발자, 호예준 포트폴리오</Link2>
                             </BreadcrumbLink>
                         </BreadcrumbItem>
-                        <BreadcrumbSeparator>/</BreadcrumbSeparator>
-                        <BreadcrumbItem>
+                        <BreadcrumbSeparator className="max-xl:hidden">/</BreadcrumbSeparator>
+                        <BreadcrumbItem className="max-xl:hidden">
                             <BreadcrumbLink className="text-white" asChild>
-                                <Link2 href="/details/starly" className="flex items-center gap-1">
+                                <Link2 href="/starly" className="flex items-center gap-1">
                                     <Image alt="스탈리 로고" src="https://cdn.nillpoe.xyz/images/Starly2_2.png"
                                            width={16} height={16}
                                            className="h-4 w-4"/>
@@ -51,26 +40,16 @@ const StarlyKR = () => {
                                 </Link2>
                             </BreadcrumbLink>
                         </BreadcrumbItem>
-                        <BreadcrumbSeparator>/</BreadcrumbSeparator>
+                        <BreadcrumbSeparator className="max-xl:hidden">/</BreadcrumbSeparator>
                         <BreadcrumbItem>
                             <BreadcrumbLink className="text-white" asChild>
-                                <Link2 href="/details/starly/closed">📣 스탈리 서비스 종료</Link2>
+                                <Link2 href="/starly/closed">📣 스탈리 서비스 종료</Link2>
                             </BreadcrumbLink>
                         </BreadcrumbItem>
                     </BreadcrumbList>
                 </Breadcrumb>
             </div>
         </nav>
-    );
-
-    const Home = () => (
-        <div className="min-h-screen w-[860px] pt-[45px] z-10">
-            <Article/>
-            <Separator className="w-[calc(100%-2rem)] mx-4 my-6"/>
-            <FAQ/>
-            <Separator className="w-[calc(100%-2rem)] mx-4 mt-6"/>
-            <Footer/>
-        </div>
     );
 
     const Article = () => (
@@ -80,8 +59,8 @@ const StarlyKR = () => {
             transition={{duration: 0.8}}
             className="p-4 flex flex-col gap-y-8 justify-center"
         >
-            <h1 className="text-5xl font-semibold mt-6 mb-12">📣 스탈리 서비스 종료</h1>
-            <div className="flex justify-between">
+            <h1 className="max-xl:text-4xl text-5xl font-semibold mt-6 mb-12">📣 스탈리 서비스 종료</h1>
+            <div className="flex max-xl:flex-col justify-between">
                 <div>
                     <p className="font-semibold">스탈리는 2024년 10월 30일을 끝으로 서비스를 종료합니다.</p>
                     <p>
@@ -111,7 +90,7 @@ const StarlyKR = () => {
                     </div>
                     <Separator className="my-4"/>
                     <p className="font-semibold">문의는 아래중 하나로 부탁드립니다.</p>
-                    <div className="w-full mt-2 flex justify-between text-neutral-100/85">
+                    <div className="w-full mt-2 grid grid-cols-2 gap-4 text-neutral-100/85 sm:grid-cols-4">
                         <div>
                             <p>디스코드</p>
                             <Link target="_blank" href="https://discord.com/users/1102166553027432488">@nillpoe</Link>
@@ -131,6 +110,7 @@ const StarlyKR = () => {
                     </div>
                 </div>
                 <div className="min-h-full flex flex-col justify-center">
+                    <Separator className="xl:hidden my-4"/>
                     <CircularText
                         text="STARLY*CERTIFIED*"
                         onHover="pause"
@@ -180,17 +160,21 @@ const StarlyKR = () => {
         >
             <div className="w-full flex items-center justify-between">
                 <p className="text-neutral-400 font-bold">호예준 ⓒ 2025, 모든 권리 보유.</p>
-                <p className="text-neutral-400 font-normal">최근 수정: 2025-02-16</p>
+                <p className="text-neutral-400 font-normal">STARLY.KR</p>
             </div>
         </motion.footer>
     );
 
     return (
         <main className="h-full flex flex-col justify-center items-center">
-            <Background/>
-
             <Navbar/>
-            <Home/>
+            <div className="min-h-screen max-xl:w-full w-[860px] pt-[45px] z-10">
+                <Article/>
+                <Separator className="w-[calc(100%-2rem)] mx-4 xl:my-6"/>
+                <FAQ/>
+                <Separator className="w-[calc(100%-2rem)] mx-4 mt-6"/>
+                <Footer/>
+            </div>
         </main>
     );
 };

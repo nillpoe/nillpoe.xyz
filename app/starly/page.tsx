@@ -8,10 +8,10 @@ import {
     BreadcrumbSeparator
 } from "@/components/ui/breadcrumb";
 import Link2 from "next/link";
-import Image from "next/image";
 import React from "react";
+import Image from "next/image";
 
-const Verchase = () => {
+const Starly = () => {
     const Navbar = () => (
         <nav className="max-xl:hidden fixed top-0 left-0 right-0 z-50 h-[45px] w-full flex justify-between items-center pl-2.5 pr-3 backdrop-blur-md border-b border-neutral-500/50">
             <div className="flex items-center">
@@ -25,11 +25,11 @@ const Verchase = () => {
                         <BreadcrumbSeparator>/</BreadcrumbSeparator>
                         <BreadcrumbItem>
                             <BreadcrumbLink className="text-white" asChild>
-                                <Link2 href="/details/verchase" className="flex items-center gap-1">
-                                    <Image alt="벌체이스 로고" src="https://cdn.nillpoe.xyz/images/Verchase.png"
+                                <Link2 href="/starly" className="flex items-center gap-1">
+                                    <Image alt="스탈리 로고" src="https://cdn.nillpoe.xyz/images/Starly2_2.png"
                                            width={16} height={16}
                                            className="h-4 w-4"/>
-                                    <span>벌체이스</span>
+                                    <span>스탈리</span>
                                 </Link2>
                             </BreadcrumbLink>
                         </BreadcrumbItem>
@@ -54,4 +54,4 @@ const Verchase = () => {
     )
 };
 
-export default Verchase;
+export default Starly;
