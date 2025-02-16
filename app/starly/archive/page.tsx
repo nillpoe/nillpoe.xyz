@@ -38,7 +38,7 @@ const Page = () => {
                         <span>개의 프로젝트, 잊지 않겠습니다.</span>
                     </p>
                     <p className="mt-2.5">
-                        2022년부터 2024년까지 배포·판매된 대부분의 플러그인을 무료로 공개합니다.<br/>
+                        스탈리에서 2022년부터 2024년까지 배포·판매된 플러그인을 무료로 공개합니다.<br/>
                         공개된 모든 플러그인에는 <span className="font-semibold">GPL-3.0 라이선스</span>가 적용되며, 기술 지원은 제공되지 않습니다.
                     </p>
                     <div className="mt-2.5 flex gap-x-2">
