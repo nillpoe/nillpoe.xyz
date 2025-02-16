@@ -69,7 +69,7 @@ export default function Iridescence({
         const gl = renderer.gl;
         gl.clearColor(1, 1, 1, 1);
 
-        let program: Program;
+        let program: Program = undefined;
 
         function resize() {
             const scale = 1;
