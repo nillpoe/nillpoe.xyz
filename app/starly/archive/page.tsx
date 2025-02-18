@@ -80,7 +80,7 @@ const Page = () => {
             className="p-4 flex flex-col gap-y-5 justify-center"
         >
             <div>
-                <h3 className="text-2xl font-bold">라이브러리 (코어)</h3>
+                <h3 className="text-2xl font-bold">시즌 1 (ST-Core)</h3>
                 <div className="w-full mt-2 grid grid-cols-1 gap-4 text-neutral-100/85 sm:grid-cols-3">
                     <div>
                         <p className="font-semibold">ST-Core 1.9.3 <span className="text-xs text-neutral-100/60">1.12-1.20.1</span></p>
@@ -88,99 +88,159 @@ const Page = () => {
                         <Link target="_blank" href="https://cdn.nillpoe.xyz/files/ST-Core-1.9.3.jar">Download</Link>
                     </div>
                     <div>
+                        <p className="font-semibold">ST-SkinBook 1.0.4</p>
+                        <Link target="_blank" href="https://github.com/StarlyTeam/ST-SkinBook">Source Code</Link>
+                        <Link target="_blank" href="https://cdn.nillpoe.xyz/files/ST-SkinBook-1.0.4.jar">Download</Link>
+                    </div>
+                    <div>
+                        <p className="font-semibold">ST-ShopPlus 1.2.5</p>
+                        <Link target="_blank" href="https://github.com/StarlyTeam/ST-ShopPlus">Source Code</Link>
+                        <Link target="_blank" href="https://cdn.nillpoe.xyz/files/ST-ShopPlus-1.2.5.jar">Download</Link>
+                    </div>
+                    <div>
+                        <p className="font-semibold">ST-CashShop 1.0.7</p>
+                        <Link target="_blank" href="https://github.com/StarlyTeam/ST-CashShop">Source Code</Link>
+                        <Link target="_blank" href="https://cdn.nillpoe.xyz/files/ST-CashShop-1.0.7.jar">Download</Link>
+                    </div>
+                    <div>
+                        <p className="font-semibold">ST-Gacha 1.1.1</p>
+                        <Link target="_blank" href="https://github.com/StarlyTeam/ST-Gacha">Source Code</Link>
+                        <Link target="_blank" href="https://cdn.nillpoe.xyz/files/ST-Gacha-1.1.1.jar">Download</Link>
+                    </div>
+                    <div>
+                        <p className="font-semibold">ST-AlphaChest 1.0.5</p>
+                        <Link target="_blank" href="https://github.com/StarlyTeam/ST-AlphaChest">Source Code</Link>
+                        <Link target="_blank" href="https://cdn.nillpoe.xyz/files/ST-AlphaChest-1.0.5.jar">Download</Link>
+                    </div>
+                    <div>
+                        <p className="font-semibold">ST-GiftBox 1.2</p>
+                        <Link target="_blank" href="https://github.com/StarlyTeam/ST-GiftBox2">Source Code</Link>
+                        <Link target="_blank" href="https://cdn.nillpoe.xyz/files/ST-GiftBox-1.2.jar">Download</Link>
+                    </div>
+                    <div>
+                        <p className="font-semibold">ST-RandomBox 1.0.7</p>
+                        <Link target="_blank" href="https://github.com/StarlyTeam/ST-RandomBox">Source Code</Link>
+                        <Link target="_blank" href="https://cdn.nillpoe.xyz/files/ST-RandomBox-1.0.7.jar">Download</Link>
+                    </div>
+                    <div>
+                        <p className="font-semibold">ST-ReverieToken 1.0.1</p>
+                        <Link target="_blank" href="https://github.com/StarlyTeam/ST-ReverieToken">Source Code</Link>
+                        <Link target="_blank" href="https://cdn.nillpoe.xyz/files/ST-ReverieToken-1.0.1.jar">Download</Link>
+                    </div>
+                    <div>
+                        <p className="font-semibold">ST-BanItem 1.0</p>
+                        <Link target="_blank" href="https://github.com/StarlyTeam/ST-BanItem">Source Code</Link>
+                        <Link target="_blank" href="https://cdn.nillpoe.xyz/files/ST-BanItem-1.0.jar">Download</Link>
+                    </div>
+                    <div>
+                        <p className="font-semibold">ST-Optimize 1.0.1</p>
+                        <Link target="_blank" href="https://github.com/StarlyTeam/ST-Optimize">Source Code</Link>
+                        <Link target="_blank" href="https://cdn.nillpoe.xyz/files/ST-Optimize-1.0.1.jar">Download</Link>
+                    </div>
+                    <div>
+                        <p className="font-semibold">ST-AntiMacro 1.0</p>
+                        <Link target="_blank" href="https://github.com/StarlyTeam/ST-AntiMacro">Source Code</Link>
+                        <Link target="_blank" href="https://cdn.nillpoe.xyz/files/ST-AntiMacro-1.0.jar">Download</Link>
+                    </div>
+                    <div>
+                        <p className="font-semibold">ST-DiscordAuth 2.0.6</p>
+                        <Link target="_blank" href="https://github.com/StarlyTeam/ST-DiscordAuth">Source Code</Link>
+                        <Link target="_blank" href="https://cdn.nillpoe.xyz/files/ST-DiscordAuth-2.0.6.jar">Download</Link>
+                    </div>
+                    <div>
+                        <p className="font-semibold">ST- Cheque 1.0.4</p>
+                        <Link target="_blank" href="https://github.com/StarlyTeam/ST-Cheque">Source Code</Link>
+                        <Link target="_blank" href="https://cdn.nillpoe.xyz/files/ST-Cheque-1.0.4.jar">Download</Link>
+                    </div>
+                    <div>
+                        <p className="font-semibold">ST- Warp 1.0.4</p>
+                        <Link target="_blank" href="https://github.com/StarlyTeam/ST-Warp">Source Code</Link>
+                        <Link target="_blank" href="https://cdn.nillpoe.xyz/files/ST-Warp-1.0.4.jar">Download</Link>
+                    </div>
+                    <div>
+                        <p className="font-semibold">ST- WarpPlus 1.0</p>
+                        <Link target="_blank" href="https://github.com/StarlyTeam/ST-WarpPlus">Source Code</Link>
+                        <Link target="_blank" href="https://cdn.nillpoe.xyz/files/ST-WarpPlus-1.0.jar">Download</Link>
+                    </div>
+                    <div>
+                        <p className="font-semibold">ST- WhitelistTicket 1.0</p>
+                        <Link target="_blank" href="https://github.com/StarlyTeam/ST-WhitelistTicket">Source Code</Link>
+                        <Link target="_blank" href="https://cdn.nillpoe.xyz/files/ST-WhitelistTicket-1.0.jar">Download</Link>
+                    </div>
+                    <div>
+                        <p className="font-semibold">ST- DiscordChat 1.0</p>
+                        <Link target="_blank" href="https://github.com/StarlyTeam/ST-DiscordChat">Source Code</Link>
+                        <Link target="_blank" href="https://cdn.nillpoe.xyz/files/ST-DiscordChat-1.0.jar">Download</Link>
+                    </div>
+                    <div>
+                        <p className="font-semibold">ST- Waiter 1.0</p>
+                        <Link target="_blank" href="https://github.com/StarlyTeam/ST-Waiter">Source Code</Link>
+                        <Link target="_blank" href="https://cdn.nillpoe.xyz/files/ST-Waiter-1.0.jar">Download</Link>
+                    </div>
+                    <div>
+                        <p className="font-semibold">ST- ItemCommand 1.1</p>
+                        <Link target="_blank" href="https://github.com/StarlyTeam/ST-ItemCommand">Source Code</Link>
+                        <Link target="_blank" href="https://cdn.nillpoe.xyz/files/ST-ItemCommand-1.1.jar">Download</Link>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <h3 className="text-2xl font-bold">시즌 2 (StarlyCore)</h3>
+                <div className="w-full mt-2 grid grid-cols-1 gap-4 text-neutral-100/85 sm:grid-cols-3">
+                    <div>
                         <p className="font-semibold">StarlyCore 2.1 <span className="text-xs text-neutral-100/60">1.12-1.20.4</span></p>
                         <Link target="_blank" href="https://github.com/StarlyTeam/StarlyCore">Source Code</Link>
                         <Link target="_blank" href="https://cdn.nillpoe.xyz/files/StarlyCore-2.1.jar">Download</Link>
                     </div>
                     <div>
-                        <p className="font-semibold">NillLibs 1.3.2 <span className="text-xs text-neutral-100/60">1.18-1.21.4</span></p>
-                        <Link target="_blank" href="https://github.com/StarlyTeam/NillLibs">Source Code</Link>
-                        <Link href="https://cdn.nillpoe.xyz/files/NillLibs-1.3.2.jar">Download</Link>
-                    </div>
-                </div>
-            </div>
-            <div>
-                <h3 className="text-2xl font-bold">유료 리소스</h3>
-                <div className="w-full mt-2 grid grid-cols-1 gap-4 text-neutral-100/85 sm:grid-cols-3">
-                    <div>
-                        <p className="font-semibold">AstalShop 3.4.2 <span className="text-xs text-neutral-100/60">NillLibs</span></p>
-                        <Link target="_blank" href="https://cdn.nillpoe.xyz/files/AstralShop-3.4.2.zip">Source Code</Link>
-                        <Link target="_blank" href="https://cdn.nillpoe.xyz/files/AstralShop-3.4.2.jar">Download</Link>
-                    </div>
-                    <div>
-                        <p className="font-semibold">ST-CustomMenu 1.2 <span className="text-xs text-neutral-100/60">1.12-1.21.4</span></p>
+                        <p className="font-semibold">ST-CustomMenu 1.2</p>
                         <Link target="_blank" href="https://github.com/StarlyTeam/ST-CustomMenu">Source Code</Link>
                         <Link target="_blank" href="https://cdn.nillpoe.xyz/files/ST-CustomMenu-1.2.jar">Download</Link>
                     </div>
                     <div>
-                        <p className="font-semibold">ST-SkinBook 1.0.4 <span className="text-xs text-neutral-100/60">ST-Core</span></p>
-                        <Link target="_blank" href="https://github.com/StarlyTeam/ST-SkinBook">Source Code</Link>
-                        <Link target="_blank" href="https://cdn.nillpoe.xyz/files/ST-SkinBook-1.0.4.jar">Download</Link>
-                    </div>
-                    <div>
-                        <p className="font-semibold">ST-QuickMenu 1.0.5 <span className="text-xs text-neutral-100/60">StarlyCore</span></p>
+                        <p className="font-semibold">ST-QuickMenu 1.0.5</p>
                         <Link target="_blank" href="https://github.com/StarlyTeam/ST-QuickMenu">Source Code</Link>
                         <Link target="_blank" href="https://cdn.nillpoe.xyz/files/ST-QuickMenu-1.0.5.jar">Download</Link>
                     </div>
                     <div>
-                        <p className="font-semibold">ST-ShopPlus 1.2.5 <span className="text-xs text-neutral-100/60">ST-Core</span></p>
-                        <Link target="_blank" href="https://github.com/StarlyTeam/ST-ShopPlus">Source Code</Link>
-                        <Link target="_blank" href="https://cdn.nillpoe.xyz/files/ST-ShopPlus-1.2.5.jar">Download</Link>
-                    </div>
-                    <div>
-                        <p className="font-semibold">ST-CashShop 1.0.7 <span className="text-xs text-neutral-100/60">ST-Core</span></p>
-                        <Link target="_blank" href="https://github.com/StarlyTeam/ST-CashShop">Source Code</Link>
-                        <Link target="_blank" href="https://cdn.nillpoe.xyz/files/ST-CashShop-1.0.7.jar">Download</Link>
-                    </div>
-                </div>
-            </div>
-            <div>
-                <h3 className="text-2xl font-bold">무료 리소스</h3>
-                <div className="w-full mt-2 grid grid-cols-1 gap-4 text-neutral-100/85 sm:grid-cols-3">
-                    <div>
-                        <p className="font-semibold">ST-ItemEditor 1.2.7 <span className="text-xs text-neutral-100/60">StarlyCore</span></p>
+                        <p className="font-semibold">ST-ItemEditor 1.2.7</p>
                         <Link target="_blank" href="https://github.com/StarlyTeam/ST-ItemEditor">Source Code</Link>
                         <Link target="_blank" href="https://cdn.nillpoe.xyz/files/ST-ItemEditor-1.2.7.jar">Download</Link>
                     </div>
                     <div>
-                        <p className="font-semibold">ST-DefaultKit 1.3.5 <span className="text-xs text-neutral-100/60">StarlyCore</span></p>
+                        <p className="font-semibold">ST-DefaultKit 1.3.5</p>
                         <Link target="_blank" href="https://github.com/StarlyTeam/ST-DefaultKit2">Source Code</Link>
                         <Link target="_blank" href="https://cdn.nillpoe.xyz/files/ST-DefaultKit-1.3.5.jar">Download</Link>
                     </div>
                     <div>
-                        <p className="font-semibold">ST-AlphaChest 1.0.5 <span className="text-xs text-neutral-100/60">ST-Core</span></p>
-                        <Link target="_blank" href="https://github.com/StarlyTeam/ST-AlphaChest">Source Code</Link>
-                        <Link target="_blank" href="https://cdn.nillpoe.xyz/files/ST-AlphaChest-1.0.5.jar">Download</Link>
-                    </div>
-                    <div>
-                        <p className="font-semibold">ST-GiftBox 1.2 <span className="text-xs text-neutral-100/60">ST-Core</span></p>
-                        <Link target="_blank" href="https://github.com/StarlyTeam/ST-GiftBox2">Source Code</Link>
-                        <Link target="_blank" href="https://cdn.nillpoe.xyz/files/ST-GiftBox-1.2.jar">Download</Link>
-                    </div>
-                    <div>
-                        <p className="font-semibold">ST-RandomBox 1.0.7 <span className="text-xs text-neutral-100/60">ST-Core</span></p>
-                        <Link target="_blank" href="https://github.com/StarlyTeam/ST-RandomBox">Source Code</Link>
-                        <Link target="_blank" href="https://cdn.nillpoe.xyz/files/ST-RandomBox-1.0.7.jar">Download</Link>
-                    </div>
-                    <div>
-                        <p className="font-semibold">ST-ItemDB 1.0.1 <span className="text-xs text-neutral-100/60">StarlyCore</span></p>
+                        <p className="font-semibold">ST-ItemDB 1.0.1</p>
                         <Link target="_blank" href="https://github.com/StarlyTeam/ST-ItemDB">Source Code</Link>
                         <Link target="_blank" href="https://cdn.nillpoe.xyz/files/ST-ItemDB-1.0.1.jar">Download</Link>
                     </div>
                     <div>
-                        <p className="font-semibold">ST-ReverieToken 1.0.1 <span className="text-xs text-neutral-100/60">ST-Core</span></p>
-                        <Link target="_blank" href="https://github.com/StarlyTeam/ST-ReverieToken">Source Code</Link>
-                        <Link target="_blank" href="https://cdn.nillpoe.xyz/files/ST-ReverieToken-1.0.1.jar">Download</Link>
-                    </div>
-                    <div>
-                        <p className="font-semibold">ST-Shop 1.0.4 <span className="text-xs text-neutral-100/60">StarlyCore</span></p>
+                        <p className="font-semibold">ST-Shop 1.0.4</p>
                         <Link target="_blank" href="https://github.com/StarlyTeam/ST-Shop2">Source Code</Link>
                         <Link target="_blank" href="https://cdn.nillpoe.xyz/files/ST-Shop-1.0.4.jar">Download</Link>
                     </div>
                     <div>
-                        <p className="font-semibold">ST-Warn 1.0.4 <span className="text-xs text-neutral-100/60">StarlyCore</span></p>
+                        <p className="font-semibold">ST-Warn 1.0.4</p>
                         <Link target="_blank" href="https://github.com/StarlyTeam/ST-Warn">Source Code</Link>
                         <Link target="_blank" href="https://cdn.nillpoe.xyz/files/ST-Warn-1.0.4.jar">Download</Link>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <h3 className="text-2xl font-bold">시즌 2~ (NillLibs)</h3>
+                <div className="w-full mt-2 grid grid-cols-1 gap-4 text-neutral-100/85 sm:grid-cols-3">
+                    <div>
+                        <p className="font-semibold">NillLibs 1.3.2 <span className="text-xs text-neutral-100/60">1.18-1.21.4</span></p>
+                        <Link target="_blank" href="https://github.com/StarlyTeam/NillLibs">Source Code</Link>
+                        <Link href="https://cdn.nillpoe.xyz/files/NillLibs-1.3.2.jar">Download</Link>
+                    </div>
+                    <div>
+                        <p className="font-semibold">AstalShop 3.4.2</p>
+                        <Link target="_blank" href="https://cdn.nillpoe.xyz/files/AstralShop-3.4.2.zip">Source Code</Link>
+                        <Link target="_blank" href="https://cdn.nillpoe.xyz/files/AstralShop-3.4.2.jar">Download</Link>
                     </div>
                 </div>
             </div>
