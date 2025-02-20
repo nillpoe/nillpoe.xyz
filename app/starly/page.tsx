@@ -173,7 +173,7 @@ const Page = () => {
                     <div className="aspect-video rounded-2xl overflow-hidden bg-neutral-900/30 backdrop-blur-sm">
                         <iframe
                             className="w-full h-full"
-                            src="https://www.youtube.com/embed/W9q6rJAUCNY"
+                            src="https://www.youtube.com/embed/pMUhif4Etrk"
                             title="스탈리 시연 영상"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                             allowFullScreen
@@ -182,7 +182,7 @@ const Page = () => {
                     <div className="aspect-video rounded-2xl overflow-hidden bg-neutral-900/30 backdrop-blur-sm">
                         <iframe
                             className="w-full h-full"
-                            src="https://www.youtube.com/embed/XqIror-5e4Q"
+                            src="https://www.youtube.com/embed/W9q6rJAUCNY"
                             title="스탈리 시연 영상"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                             allowFullScreen
