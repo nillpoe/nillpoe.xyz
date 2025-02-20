@@ -10,8 +10,8 @@ const StarlyNavbar = () => {
         {
             text: "💫 풀스택 개발자, 호예준 포트폴리오",
             url: "/",
-            className: "max-sm:hidden",
-            separatorClassName: "max-sm:hidden"
+            // className: "max-sm:hidden",
+            // separatorClassName: "max-sm:hidden"
         },
         {
             icon: "https://cdn.nillpoe.xyz/images/Starly2_2.png",

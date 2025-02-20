@@ -161,7 +161,7 @@ const Page = () => {
                     </div>
                 </div>
                 <p className="text-center text-sm text-neutral-400">
-                    ⓒ 예유페, 모든 권리 보유
+                    예유페 ⓒ {new Date().getFullYear()}, 모든 권리 보유
                 </p>
             </motion.section>
             <motion.section 

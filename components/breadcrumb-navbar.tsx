@@ -26,7 +26,7 @@ export type BreadcrumbItem = {
 
 const Navbar = ({items}: NavbarProps) => {
     return (
-        <nav className="fixed top-0 left-0 right-0 z-30 h-[45px] w-full flex justify-between items-center pl-2.5 pr-3 backdrop-blur-md border-b border-neutral-500/50">
+        <nav className="fixed top-0 left-0 right-0 z-30 min-h-[45px] py-2 w-full flex justify-between items-center pl-2.5 pr-3 backdrop-blur-md border-b border-neutral-500/50">
             <div className="flex items-center">
                 <Breadcrumb className="ml-2">
                     <BreadcrumbList className="gap-1">
