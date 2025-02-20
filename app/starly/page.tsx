@@ -77,7 +77,7 @@ const Page = () => {
         <motion.div 
             initial="initial"
             animate="animate"
-            className="container mx-auto p-5 mt-16 min-h-screen"
+            className="container mx-auto p-5 mt-5 min-h-screen"
         >
             <motion.section 
                 variants={fadeInUp}

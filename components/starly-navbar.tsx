@@ -2,6 +2,7 @@
 
 import {usePathname} from "next/navigation";
 import Navbar, {BreadcrumbItem} from "@/components/breadcrumb-navbar";
+import Link from "@/components/ui/link";
 
 const StarlyNavbar = () => {
     const pathname = usePathname();
@@ -37,7 +38,14 @@ const StarlyNavbar = () => {
         );
     }
 
-    return <Navbar items={breadcrumbItems}/>;
+    return <Navbar items={breadcrumbItems}>
+        <div className="w-full bg-red-500/10 border border-red-500/20 rounded-lg p-1 mt-1.5">
+            <p className="flex justify-center items-center space-x-1.5 text-red-500 font-medium text-center">
+                <span>🚨 서비스가 종료되었습니다.</span>
+                <Link href="/starly/closed" className="underline">공지사항</Link>
+            </p>
+        </div>
+    </Navbar>;
 };
 
 export default StarlyNavbar

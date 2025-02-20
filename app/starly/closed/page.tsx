@@ -9,7 +9,7 @@ import { PillBottle } from "lucide-react";
 
 const Page = () => {
     return (
-        <div className="min-h-screen max-xl:w-full w-[860px] p-5 space-y-8 z-10 mt-16">
+        <div className="min-h-screen max-xl:w-full w-[860px] p-5 space-y-8 z-10 mt-5">
             <motion.section
                 initial={{opacity: 0, y: 10}}
                 animate={{opacity: 1, y: 0}}

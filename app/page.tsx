@@ -3,7 +3,6 @@
 import React from "react";
 import Image from "next/image";
 import {motion} from "framer-motion";
-import StackIcon from "tech-stack-icons";
 import Link from "@/components/ui/link";
 import Squares from "@/components/ui/squares";
 import RotatingText from "@/components/ui/rotating-text";
