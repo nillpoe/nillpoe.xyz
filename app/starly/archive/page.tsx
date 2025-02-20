@@ -13,7 +13,8 @@ const Page = () => {
     const itemDelay = 0.05;
     const sectionDelay = 0.3;
 
-    const calculatePreviousDelay = (prevPlugins: never[]) => {
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    const calculatePreviousDelay = (prevPlugins: any[]) => {
         return baseDelay + (prevPlugins.length * itemDelay) + sectionDelay;
     };
 
