@@ -137,78 +137,131 @@ const Page = () => {
                     <span> | Skills</span>
                 </h2>
                 <div className="w-full flex flex-col gap-y-4">
-                    <div className="flex flex-col sm:flex-row justify-between items-center gap-y-2">
+                    <div className="flex flex-col justify-between items-center gap-y-2">
+                        <h3 className="text-lg sm:text-xl font-bold underline underline-offset-4">작업 예정</h3>
+                    </div>
+                    {/* <div className="flex flex-col sm:flex-row justify-between items-center gap-y-2">
                         <h3 className="text-lg sm:text-xl font-bold">Backend</h3>
                         <div className="flex flex-wrap justify-center items-center gap-2">
-                            <StackIcon name="java" className="h-12 sm:h-14 rounded-md bg-neutral-100 p-2"/>
-                            <StackIcon name="kotlin" className="h-12 sm:h-14 rounded-md bg-neutral-100 p-2"/>
-                            <StackIcon name="spring" className="h-12 sm:h-14 rounded-md bg-neutral-100 p-2"/>
-                            <Image alt="Maven 로고" src="https://cdn.nillpoe.xyz/images/Maven.svg"
-                                width={56} height={56}
-                                className="h-12 sm:h-14 rounded-md bg-neutral-100 p-2 select-none"/>
-                            <Image alt="Gradle 로고" src="https://cdn.nillpoe.xyz/images/Gradle.svg"
-                                width={56} height={56}
-                                className="h-12 sm:h-14 rounded-md bg-neutral-100 p-2 select-none"/>
+                            <span className="flex justify-center items-center aspect-square rounded-md bg-neutral-100 p-2">
+                                <StackIcon name="java" className="h-8 sm:h-10"/>
+                            </span>
+                            <span className="flex justify-center items-center aspect-square rounded-md bg-neutral-100 p-2">
+                                <StackIcon name="kotlin" className="h-8 sm:h-10"/>
+                            </span>
+                            <span className="flex justify-center items-center aspect-square rounded-md bg-neutral-100 p-2">
+                                <StackIcon name="spring" className="h-8 sm:h-10"/>
+                            </span>
+                            <span className="flex justify-center items-center aspect-square rounded-md bg-neutral-100 p-2">
+                                <Image alt="Maven 로고" src="https://cdn.nillpoe.xyz/images/Maven.svg"
+                                    width={32} height={32} quality={100}
+                                    className="h-8 sm:h-10"/>
+                            </span>
+                            <span className="flex justify-center items-center aspect-square rounded-md bg-neutral-100 p-2">
+                                <Image alt="Gradle 로고" src="https://cdn.nillpoe.xyz/images/Gradle.svg"
+                                    width={32} height={32} quality={100}
+                                    className="h-8 sm:h-10"/>
+                            </span>
                         </div>
                     </div>
                     <div className="flex flex-col sm:flex-row justify-between items-center gap-y-2">
                         <h3 className="text-lg sm:text-xl font-bold">JavaScript</h3>
                         <div className="flex flex-wrap justify-center items-center gap-2">
-                            <StackIcon name="js" className="h-12 sm:h-14 rounded-md bg-neutral-100 p-2"/>
-                            <StackIcon name="typescript" className="h-12 sm:h-14 rounded-md bg-neutral-100 p-2"/>
-                            <StackIcon name="nodejs" className="h-12 sm:h-14 rounded-md bg-neutral-100 p-2"/>
-                            <StackIcon name="reactjs" className="h-12 sm:h-14 rounded-md bg-neutral-100 p-2"/>
-                            <StackIcon name="nextjs" className="h-12 sm:h-14 rounded-md bg-neutral-100 p-2"/>
+                            <span className="flex justify-center items-center aspect-square rounded-md bg-neutral-100 p-2">
+                                <StackIcon name="js" className="h-8 sm:h-10"/>
+                            </span>
+                            <span className="flex justify-center items-center aspect-square rounded-md bg-neutral-100 p-2">
+                                <StackIcon name="typescript" className="h-8 sm:h-10"/>
+                            </span>
+                            <span className="flex justify-center items-center aspect-square rounded-md bg-neutral-100 p-2">
+                                <StackIcon name="nodejs" className="h-8 sm:h-10"/>
+                            </span>
+                            <span className="flex justify-center items-center aspect-square rounded-md bg-neutral-100 p-2">
+                                <StackIcon name="reactjs" className="h-8 sm:h-10"/>
+                            </span>
+                            <span className="flex justify-center items-center aspect-square rounded-md bg-neutral-100 p-2">
+                                <StackIcon name="nextjs" className="h-8 sm:h-10"/>
+                            </span>
                         </div>
                     </div>
                     <div className="flex flex-col sm:flex-row justify-between items-center gap-y-2">
                         <h3 className="text-lg sm:text-xl font-bold">Database</h3>
                         <div className="flex flex-wrap justify-center items-center gap-2">
-                            <StackIcon name="mysql" className="h-12 sm:h-14 rounded-md bg-neutral-100 p-2"/>
-                            <Image alt="SQLite 로고" src="https://cdn.nillpoe.xyz/images/SQLite.svg"
-                                width={56} height={56}
-                                className="h-12 sm:h-14 rounded-md bg-neutral-100 p-2 select-none"/>
-                            <StackIcon name="mongodb" className="h-12 sm:h-14 rounded-md bg-neutral-100 p-2"/>
-                            <StackIcon name="redis" className="h-12 sm:h-14 rounded-md bg-neutral-100 p-2"/>
-                            <Image alt="HeidiSQL 로고" src="https://cdn.nillpoe.xyz/images/HeidiSQL.png"
-                                width={56} height={56}
-                                className="h-12 sm:h-14 rounded-md bg-neutral-100 p-2 select-none"/>
+                            <span className="flex justify-center items-center aspect-square rounded-md bg-neutral-100 p-2">
+                                <StackIcon name="mysql" className="h-8 sm:h-10"/>
+                            </span>
+                            <span className="flex justify-center items-center aspect-square rounded-md bg-neutral-100 p-2">
+                                <Image alt="SQLite 로고" src="https://cdn.nillpoe.xyz/images/SQLite.svg"
+                                    width={32} height={32} quality={100}
+                                    className="h-8 sm:h-10"/>
+                            </span>
+                            <span className="flex justify-center items-center aspect-square rounded-md bg-neutral-100 p-2">
+                                <StackIcon name="mongodb" className="h-8 sm:h-10"/>
+                            </span>
+                            <span className="flex justify-center items-center aspect-square rounded-md bg-neutral-100 p-2">
+                                <StackIcon name="redis" className="h-8 sm:h-10"/>
+                            </span>
+                            <span className="flex justify-center items-center aspect-square rounded-md bg-neutral-100 p-2">
+                                <Image alt="HeidiSQL 로고" src="https://cdn.nillpoe.xyz/images/HeidiSQL.png"
+                                    width={32} height={32} quality={100}
+                                    className="h-8 sm:h-10"/>
+                            </span>
                         </div>
                     </div>
                     <div className="flex flex-col sm:flex-row justify-between items-center gap-y-2">
                         <h3 className="text-lg sm:text-xl font-bold">DevOps</h3>
                         <div className="flex flex-wrap justify-center items-center gap-2">
-                            <StackIcon name="git" className="h-12 sm:h-14 rounded-md bg-neutral-100 p-2"/>
-                            <StackIcon name="github" className="h-12 sm:h-14 rounded-md bg-neutral-100 p-2"/>
-                            <Image alt="Discord 로고" src="https://cdn.nillpoe.xyz/images/Discord.svg"
-                                width={56} height={56}
-                                className="h-12 sm:h-14 rounded-md bg-neutral-100 p-2 select-none"/>
-                            <Image alt="Jenkins 로고" src="https://cdn.nillpoe.xyz/images/Jenkins.svg"
-                                width={50} height={50}
-                                className="h-12 sm:h-14 w-12 sm:w-14 rounded-md bg-neutral-100 px-2.5 py-1 select-none"/>
-                            <Image alt="TeamCity 로고" src="https://cdn.nillpoe.xyz/images/TeamCity.svg"
-                                width={56} height={56}
-                                className="h-12 sm:h-14 rounded-md bg-neutral-100 p-2 select-none"/>
+                            <span className="flex justify-center items-center aspect-square rounded-md bg-neutral-100 p-2">
+                                <StackIcon name="git" className="h-8 sm:h-10"/>
+                            </span>
+                            <span className="flex justify-center items-center aspect-square rounded-md bg-neutral-100 p-2">
+                                <StackIcon name="github" className="h-8 sm:h-10"/>
+                            </span>
+                            <span className="flex justify-center items-center aspect-square rounded-md bg-neutral-100 p-2">
+                                <Image alt="Discord 로고" src="https://cdn.nillpoe.xyz/images/Discord.svg"
+                                    width={32} height={32} quality={100}
+                                    className="h-8 sm:h-10"/>
+                            </span>
+                            <span className="flex justify-center items-center aspect-square rounded-md bg-neutral-100 p-2">
+                                <Image alt="Jenkins 로고" src="https://cdn.nillpoe.xyz/images/Jenkins.svg"
+                                    width={32} height={32} quality={100}
+                                    className="h-8 sm:h-10"/>
+                            </span>
+                            <span className="flex justify-center items-center aspect-square rounded-md bg-neutral-100 p-2">
+                                <Image alt="TeamCity 로고" src="https://cdn.nillpoe.xyz/images/TeamCity.svg"
+                                    width={32} height={32} quality={100}
+                                    className="h-8 sm:h-10"/>
+                            </span>
                         </div>
                     </div>
                     <div className="flex flex-col sm:flex-row justify-between items-center gap-y-2">
                         <h3 className="text-lg sm:text-xl font-bold">Tool</h3>
                         <div className="flex flex-wrap justify-center items-center gap-2">
-                            <Image alt="IntelliJ 로고" src="https://cdn.nillpoe.xyz/images/IntelliJ.svg"
-                                width={56} height={56}
-                                className="h-12 sm:h-14 rounded-md bg-neutral-100 p-2 select-none"/>
-                            <Image alt="WebStorm 로고" src="https://cdn.nillpoe.xyz/images/WebStorm.svg"
-                                width={56} height={56}
-                                className="h-12 sm:h-14 rounded-md bg-neutral-100 p-2 select-none"/>
-                            <Image alt="VSCode 로고" src="https://cdn.nillpoe.xyz/images/VSCode.svg"
-                                width={56} height={56}
-                                className="h-12 sm:h-14 rounded-md bg-neutral-100 p-2 select-none"/>
-                            <Image alt="Parsec 로고" src="https://cdn.nillpoe.xyz/images/Parsec.svg"
-                                width={56} height={56}
-                                className="h-12 sm:h-14 rounded-md bg-neutral-100 p-2 select-none"/>
-                            <StackIcon name="figma" className="h-12 sm:h-14 rounded-md bg-neutral-100 p-2"/>
+                            <span className="flex justify-center items-center aspect-square rounded-md bg-neutral-100 p-2">
+                                <Image alt="IntelliJ 로고" src="https://cdn.nillpoe.xyz/images/IntelliJ.svg"
+                                    width={32} height={32} quality={100}
+                                    className="h-8 sm:h-10"/>
+                            </span>
+                            <span className="flex justify-center items-center aspect-square rounded-md bg-neutral-100 p-2">
+                                <Image alt="WebStorm 로고" src="https://cdn.nillpoe.xyz/images/WebStorm.svg"
+                                    width={32} height={32} quality={100}
+                                    className="h-8 sm:h-10"/>
+                            </span>
+                            <span className="flex justify-center items-center aspect-square rounded-md bg-neutral-100 p-2">
+                                <Image alt="VSCode 로고" src="https://cdn.nillpoe.xyz/images/VSCode.svg"
+                                    width={32} height={32} quality={100}
+                                    className="h-8 sm:h-10"/>
+                            </span>
+                            <span className="flex justify-center items-center aspect-square rounded-md bg-neutral-100 p-2">
+                                <Image alt="Parsec 로고" src="https://cdn.nillpoe.xyz/images/Parsec.svg"
+                                    width={32} height={32} quality={100}
+                                    className="h-8 sm:h-10"/>
+                            </span>
+                            <span className="flex justify-center items-center aspect-square rounded-md bg-neutral-100 p-2">
+                                <StackIcon name="figma" className="h-8 sm:h-10"/>
+                            </span>
                         </div>
-                    </div>
+                    </div> */}
                 </div>
             </motion.section>
             <Separator className="my-7"/>
@@ -224,7 +277,7 @@ const Page = () => {
                         width={35} height={35}/>
                     <span> | Social</span>
                 </h2>
-                <div className="w-full mt-2 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 text-neutral-100/85">
+                <div className="w-full mt-2 grid grid-cols-2 md:grid-cols-4 gap-4 text-neutral-100/85">
                     <div>
                         <p>디스코드</p>
                         <Link target="_blank" href="https://discord.com/users/1102166553027432488">@nillpoe</Link>
