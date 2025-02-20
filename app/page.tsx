@@ -1,16 +1,18 @@
 "use client";
 
-import Link from "@/components/ui/link";
+import React from "react";
 import Link2 from "next/link";
+import Image from "next/image";
+import {motion} from "framer-motion";
+import StackIcon from "tech-stack-icons";
+import Link from "@/components/ui/link";
 import Squares from "@/components/ui/squares";
 import RotatingText from "@/components/ui/rotating-text";
 import {Smartphone} from "lucide-react";
-import Image from "next/image";
 import {Separator} from "@/components/ui/separator";
-import {motion} from "framer-motion";
-import StackIcon from "tech-stack-icons";
-import React from "react";
 import Navbar from "@/components/breadcrumb-navbar";
+import Social2 from "@/components/social";
+import Links from "@/components/links";
 
 const Page = () => {
     const MobileWarningBanner = () => (
@@ -306,28 +308,8 @@ const Page = () => {
                        width={35} height={35}/>
                 <span> | Social</span>
             </h2>
-            <div className="w-full flex justify-between">
-                <div>
-                    <p>디스코드</p>
-                    <Link target="_blank" href="https://discord.com/users/1102166553027432488">@nillpoe</Link>
-                </div>
-                <div>
-                    <p>텔레그램</p>
-                    <Link target="_blank" href="https://t.me/nillpoe">@nillpoe</Link>
-                </div>
-                <div>
-                    <p>깃허브</p>
-                    <Link target="_blank" href="https://github.com/nillpoe">@nillpoe</Link>
-                </div>
-                <div>
-                    <p>이메일</p>
-                    <Link target="_blank" href="mailto:hello@nillpoe.xyz">hello@nillpoe.xyz</Link>
-                </div>
-                <div>
-                    <p>웹사이트</p>
-                    <Link target="_blank" href={`https://${process.env.NEXT_PUBLIC_DOMAIN}`}>{process.env.NEXT_PUBLIC_DOMAIN}</Link>
-                </div>
-            </div>
+            <Social2 discord telegram email/>
+            <Links github website/>
         </motion.section>
     );
 

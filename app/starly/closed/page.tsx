@@ -7,6 +7,7 @@ import CountUp from "@/components/ui/count-up";
 import Link from "@/components/ui/link";
 import {Separator} from "@/components/ui/separator";
 import {Accordion, AccordionContent, AccordionItem, AccordionTrigger} from "@/components/ui/accordion";
+import Social from "@/components/social";
 
 const Page = () => {
     const Article = () => (
@@ -40,20 +41,7 @@ const Page = () => {
                     </div>
                     <Separator className="my-4"/>
                     <p className="font-semibold">문의는 아래중 하나로 부탁드립니다.</p>
-                    <div className="w-full mt-2 grid grid-cols-2 gap-4 text-neutral-100/85 sm:grid-cols-3">
-                        <div>
-                            <p>디스코드</p>
-                            <Link target="_blank" href="https://discord.com/users/1102166553027432488">@nillpoe</Link>
-                        </div>
-                        <div>
-                            <p>텔레그램</p>
-                            <Link target="_blank" href="https://t.me/nillpoe">@nillpoe</Link>
-                        </div>
-                        <div>
-                            <p>이메일</p>
-                            <Link target="_blank" href="mailto:hello@nillpoe.xyz">hello@nillpoe.xyz</Link>
-                        </div>
-                    </div>
+                    <Social telegram email/>
                 </div>
                 <Separator className="xl:hidden my-4"/>
                 <div className="min-h-full flex flex-col justify-center">
