@@ -62,12 +62,16 @@ const Page = () => {
 
     const Plugins = () => (
         <motion.article
-            initial={{opacity: 0, y: 10}}
-            animate={{opacity: 1, y: 0}}
+            initial={{opacity: 0}}
+            animate={{opacity: 1}}
             transition={{duration: 0.8, delay: 0.5}}
             className="p-4 flex flex-col gap-y-5 justify-center"
         >
-            <div>
+            <motion.div
+                initial={{opacity: 0, y: 10}}
+                animate={{opacity: 1, y: 0}}
+                transition={{duration: 0.8, delay: 0.2}}
+            >
                 <h3 className="text-2xl font-bold">시즌 1 (ST-Core)</h3>
                 <div className="w-full mt-2 grid grid-cols-1 gap-4 text-neutral-100/85 sm:grid-cols-3">
                     <div>
@@ -171,8 +175,12 @@ const Page = () => {
                         <Link target="_blank" href="https://cdn.nillpoe.xyz/files/ST-SkinBook-1.0.4.jar">Download</Link>
                     </div>
                 </div>
-            </div>
-            <div>
+            </motion.div>
+            <motion.div
+                initial={{opacity: 0, y: 10}}
+                animate={{opacity: 1, y: 0}}
+                transition={{duration: 0.8, delay: 0.4}}
+            >
                 <h3 className="text-2xl font-bold">시즌 2 (StarlyCore)</h3>
                 <div className="w-full mt-2 grid grid-cols-1 gap-4 text-neutral-100/85 sm:grid-cols-3">
                     <div>
@@ -191,8 +199,12 @@ const Page = () => {
                         <Link target="_blank" href="https://cdn.nillpoe.xyz/files/ST-QuickMenu-1.0.5.jar">Download</Link>
                     </div>
                 </div>
-            </div>
-            <div>
+            </motion.div>
+            <motion.div
+                initial={{opacity: 0, y: 10}}
+                animate={{opacity: 1, y: 0}}
+                transition={{duration: 0.8, delay: 0.6}}
+            >
                 <h3 className="text-2xl font-bold">시즌 2~ (NillLibs)</h3>
                 <div className="w-full mt-2 grid grid-cols-1 gap-4 text-neutral-100/85 sm:grid-cols-3">
                     <div>
@@ -206,7 +218,7 @@ const Page = () => {
                         <Link target="_blank" href="https://cdn.nillpoe.xyz/files/AstralShop-3.4.2.jar">Download</Link>
                     </div>
                 </div>
-            </div>
+            </motion.div>
         </motion.article>
     );
 
