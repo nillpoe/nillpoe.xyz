@@ -58,7 +58,9 @@ export default {
     			},
     			footer: {
     				background: 'hsl(var(--footer-background))'
-    			}
+    			},
+				starly: 'hsl(48, 100%, 50%)',
+				discord: 'hsl(235, 86%, 65%)'
     		},
     		borderRadius: {
     			lg: 'var(--radius)',
@@ -89,5 +91,6 @@ export default {
     		}
     	}
     },
+	// eslint-disable-next-line @typescript-eslint/no-require-imports
     plugins: [require("tailwindcss-animate")]
 } satisfies Config;

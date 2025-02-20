@@ -12,6 +12,20 @@ const nextConfig: NextConfig = {
             },
             {
                 protocol: "https",
+                hostname: "cdn.discordapp.com",
+                port: "",
+                pathname: "/avatars/**",
+                search: ""
+            },
+            {
+                protocol: "https",
+                hostname: "discord.com",
+                port: "",
+                pathname: "/assets/**",
+                search: ""
+            },
+            {
+                protocol: "https",
                 hostname: "gofile.io",
                 port: "",
                 pathname: "/**",

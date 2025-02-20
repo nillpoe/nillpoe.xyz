@@ -4,7 +4,7 @@ import NextTopLoader from "nextjs-toploader";
 import {ThemeProvider} from "@/components/theme/theme-provider";
 import {Analytics} from "@vercel/analytics/react";
 import {SpeedInsights} from "@vercel/speed-insights/next";
-import "@/app/[locale]/styles/globals.css";
+import "@/app/styles/globals.css";
 import Script from "next/script";
 
 export const metadata: Metadata = {
@@ -24,7 +24,7 @@ export default async function RootLayout({
         <head>
             <Script async src="https://tally.so/widgets/embed.js"/>
         </head>
-        <body className="antialiased">
+        <body className="touch-manipulation antialiased">
         <ThemeProvider>
             <NextTopLoader color="#235ee0" showSpinner={false}/>
             <div className="bg-background min-h-screen flex flex-col">
