@@ -6,6 +6,7 @@ import {Analytics} from "@vercel/analytics/react";
 import {SpeedInsights} from "@vercel/speed-insights/next";
 import "@/app/styles/globals.css";
 import Script from "next/script";
+import ScrollToTop from "@/components/scroll-to-top";
 
 export const metadata: Metadata = {
     title: "풀스택 개발자, 호예준 포트폴리오",
@@ -31,6 +32,7 @@ export default async function RootLayout({
                 {children}
                 <Analytics/>
                 <SpeedInsights/>
+                <ScrollToTop/>
             </div>
         </ThemeProvider>
         </body>

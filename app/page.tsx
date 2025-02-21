@@ -19,7 +19,7 @@ const Page = () => {
                 }
             ]}/>
 
-            <section id="home" className="h-[calc(100%-45px)] w-full shadow-inner shadow-black/50 after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-full after:h-1/6 sm:after:h-1/3 after:bg-gradient-to-t after:from-background after:to-transparent">
+            <section id="home" className="relative h-[calc(100vh-45px)] w-full shadow-inner shadow-black/50 after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-full after:h-1/6 sm:after:h-1/3 after:bg-gradient-to-t after:from-background after:to-transparent">
                 <Squares
                     speed={0.05}
                     squareSize={35}

@@ -10,9 +10,7 @@ const StarlyNavbar = () => {
     const breadcrumbItems: BreadcrumbItem[] = [
         {
             text: "💫 풀스택 개발자, 호예준 포트폴리오",
-            url: "/",
-            // className: "max-sm:hidden",
-            // separatorClassName: "max-sm:hidden"
+            url: "/"
         },
         {
             icon: "https://cdn.nillpoe.xyz/images/Starly2_2.png",
@@ -39,14 +37,14 @@ const StarlyNavbar = () => {
     }
 
     return <Navbar items={breadcrumbItems}>
-        <div className="w-full bg-red-500/10 border border-red-500/20 rounded-lg p-1 mt-1.5">
-            {pathname === "/starly" && (
-                <p className="flex justify-center items-center space-x-1.5 text-red-500 font-medium text-center">
-                    <span>🚨 서비스가 종료되었습니다.</span>
-                    <Link href="/starly/closed" className="underline">공지사항</Link>
-                </p>
-            )}
-        </div>
+        {pathname === "/starly" && (
+            <div className="w-full bg-red-500/10 border border-red-500/20 rounded-lg p-1 mt-1.5">
+                    <p className="flex justify-center items-center space-x-1.5 text-red-500 font-medium text-center">
+                        <span>🚨 서비스가 종료되었습니다.</span>
+                        <Link href="/starly/closed" className="underline">공지사항</Link>
+                    </p>
+            </div>
+        )}
     </Navbar>;
 };
 

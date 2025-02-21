@@ -27,7 +27,7 @@ export type BreadcrumbItem = {
 
 const Navbar = ({children, items}: NavbarProps) => {
     return (
-        <nav className="sticky top-0 left-0 right-0 z-30 min-h-[45px] py-2 w-full pl-2.5 pr-3 backdrop-blur-md border-b border-neutral-500/50 mt-0 transition-[margin] duration-300 ease-in-out">
+        <nav className="relative sticky top-0 left-0 right-0 z-30 min-h-[45px] py-2 w-full pl-2.5 pr-3 backdrop-blur-md border-b border-neutral-500/50 mt-0 transition-[margin] duration-300 ease-in-out">
             <div className="flex justify-between items-center w-full">
                 <div className="flex items-center">
                     <Breadcrumb className="ml-2">
